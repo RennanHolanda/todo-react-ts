@@ -4,7 +4,7 @@ import Footer from './components/Footer';
 
 import styles from "./App.module.css"
 import  TaskForm  from './components/TaskForm';
-import { TaskList } from './components/TaskList';
+import  TaskList  from './components/TaskList';
 
 // interface
 
@@ -23,7 +23,7 @@ function App() {
           <TaskForm btnText='Criar tarefa' taskList={taskList} setTaskList={setTaskList}/>
           <div>
             <h2>Suas tarefas:</h2>
-            <TaskList />
+            <TaskList taskList={taskList}/>
           </div>
         </div>
       </main>
